@@ -1,6 +1,6 @@
 require "sinatra/reloader" if development?
 
-helpers ExampleHelpers
+helpers RenderHelpers
 
 get "/" do
   env_config = CONFIG['key']
