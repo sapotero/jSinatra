@@ -7,6 +7,8 @@ gem 'god'
 
 gem 'airbrake'
 
+gem 'tilt-jbuilder'
+
 group :development do
   gem 'capistrano','~> 2.15.4'
 end
