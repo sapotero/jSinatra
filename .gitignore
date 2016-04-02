@@ -1,0 +1,10 @@
+tmp
+tmp/**
+.rspec
+tags
+uploads/
+public/
+node_modules/
+config/unicorn.dev.rb
+.DS_Store
+Gemfile.lock
