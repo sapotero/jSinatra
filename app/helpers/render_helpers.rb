@@ -1,7 +1,7 @@
 module RenderHelpers
   # require 'tilt/jbuilder.rb'
 
-  def render( template, data )
+  def json( template, data )
     tmp = Tilt::JbuilderTemplate.new("app/views/#{template}.json.jbuilder")
     
     scope = Object.new

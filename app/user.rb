@@ -1,6 +1,6 @@
 require "sinatra/reloader" if development?
 
-get "/users" do
+get "/api/users" do
   users = [
     {
       name:     'admin',
@@ -14,6 +14,6 @@ get "/users" do
     }
   ]
 
-  render 'user/users', { users: users }
+  json 'user/users', { users: users }
 end
 

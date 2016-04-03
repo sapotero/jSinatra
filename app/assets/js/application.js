@@ -1,2 +1,3 @@
-require('./core/index.js');
-require('./core/user.js');
+require('./core/core.js');
+require('./core/route.js');
+require('./core/render.js');

@@ -6,6 +6,10 @@ $LOAD_PATH.unshift("#{ROOT_PATH}/lib", "#{ROOT_PATH}/app")
 require 'sinatra'
 require 'tilt/jbuilder.rb'
 
+
+require 'sinatra/asset_pipeline/task'
+register Sinatra::AssetPipeline
+
 require File.join(ROOT_PATH, "config", "initializers", "environment.rb")
 
 

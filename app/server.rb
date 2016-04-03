@@ -1,10 +1,10 @@
 require "sinatra/reloader" if development?
-
 helpers RenderHelpers
 
 get "/" do
-  env_config = CONFIG['key']
-  helper = helper_method
+  erb :application
+end
 
-  "Hello World! #{env_config} #{helper} ++"
+get "/api" do
+  "/api"
 end
